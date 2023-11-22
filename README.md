@@ -1,6 +1,6 @@
 # Sensor_Android
 Nome: Guilherme Gasperini Valente
-Nome: Helena Menezes
+Nome: Helena Menezes Macedo
 série: 2 DS
 
 **Intuito**
