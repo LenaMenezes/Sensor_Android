@@ -52,7 +52,7 @@ Nestá estamos colocando a função do sensor.
 
 **Evento do sensor**
 
-O evento no qual o sensor irá ser ativado.
+O evento no qual o sensor irá ser ativado, tal como a distancia que o objeto precisára estar do sensor para poder funcionar.
 
 ![WhatsApp Image 2023-11-23 at 20 14 00](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/564e2036-97c6-4e6c-9885-335bd0258fc5)
 
