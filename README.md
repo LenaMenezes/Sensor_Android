@@ -31,6 +31,10 @@ https://github.com/LenaMenezes/Sensor_Android/assets/128048493/11eadf71-7247-464
 
 https://github.com/LenaMenezes/Sensor_Android/assets/128048493/81aa512f-0e78-4581-8199-a238b73e4a51
 
+**explicação do código**
+
+o código está fazendo com que o app utilize o sensor da camera do celular, fazendo com que a lampada fique ligada quando 
+
 
 **comando**
 
