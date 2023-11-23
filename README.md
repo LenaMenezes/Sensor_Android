@@ -40,13 +40,19 @@ a baixo terá as imagens do código.
 
 **Criação do sensor**
 
+Nesse primeiro código, estamos fazendo a criação do sensor.
+
 ![WhatsApp Image 2023-11-23 at 20 13 06](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/5460e876-1bed-43b2-8be6-7ecc7232f8d6)
 
 **Função**
 
+Nestá estamos colocando a função do sensor.
+
 ![WhatsApp Image 2023-11-23 at 20 13 37](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/1e2b6f58-2d45-4fb8-8268-7a224dcd67dc)
 
 **Evento do sensor**
+
+O evento no qual o sensor irá ser ativado.
 
 ![WhatsApp Image 2023-11-23 at 20 14 00](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/564e2036-97c6-4e6c-9885-335bd0258fc5)
 
