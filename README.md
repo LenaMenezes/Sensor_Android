@@ -33,7 +33,7 @@ https://github.com/LenaMenezes/Sensor_Android/assets/128048493/81aa512f-0e78-458
 
 **explicação do código**
 
-o código está fazendo com que o app utilize o sensor da camera do celular, fazendo com que a lampada fique ligada quando 
+o código está fazendo com que o app utilize o sensor da camera do celular, fazendo com que a lampada fique ligada quando não tem nada na frente do sensor do celular, e quanto tem algo na frente a lampada se apagua.
 
 
 **comando**
