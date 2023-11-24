@@ -36,28 +36,39 @@ https://github.com/LenaMenezes/Sensor_Android/assets/128048493/81aa512f-0e78-458
 O código representa uma implementação básica de um aplicativo Android que utiliza o sensor de proximidade para controlar a troca de imagem exibida em um ImageView (representando uma lâmpada). Vamos mostrar código passo a passo:
 
  1. Declaração de Variáveis:
+ ---
 ![Alt text](image.png)
-
+---
 Antes de tudo temos que declarar as variáveis, que são Sensor de proximidade, SensorManager e a ImageView psrs poder exibir a imagem.
 
 2. onCreate:
+---
 ![Alt text](image-1.png)
+---
 Em sequencia chamamos o metodo onCreate quando uma atividade é criada. O layout é definido pelo xml "activity_main" e iniciamos as variáveis que adicionamos no passo anterior, e fazemos a verificação se existe um sensor de proximidade no dispositivo.
 
-3. onResume: 
+3. onResume:
+--- 
 ![Alt text](image-2.png)
+---
 Quando a atividade está prestes a se tornar visível, o método onResume é chamado. Com o 'this' ele cria um registro de ouvinte para o sensor de proximidade com uma taxa de atualização normal que usamos o 'SENSOR_DELAY_NORMAL'.
 
 4. onPause:
+---
 ![Alt text](image-3.png)
+---
 Nesse passo ele faz literamente o contrario, como o nome ja diz 'pause' ele remove o 'ouvinte' do sensor para economizar recursos quando a atividade nao estiver em uso.
 
-5. onSensorChanged: 
+5. onSensorChanged:
+--- 
 ![Alt text](image-4.png)
+---
 Basicamente aqui que criamos a logica da distancia e a troca das imagens com a ativação do sensor, ele verifica a distancia se está dentro do alcance do sensor. Dependendo das condições a uma troca de imagens.
 
 6. onAccuracyChanged:
+---
 ![Alt text](image-5.png)
+---
 Esse metodo é chando quendo a precisão do sensor muda, mas esta vazia, nao achamos nessecidade de criar uma logica para ele nesse exemplo.
 
 Esses sao os 6 passos basicos que usamos na criação dessa aplicação do sensor de proximidade.
