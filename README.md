@@ -57,18 +57,18 @@ Quando a atividade está prestes a se tornar visível, o método onResume é cha
 ---
 ![Alt text](image-3.png)
 ---
-Nesse passo ele faz literamente o contrario, como o nome ja diz 'pause' ele remove o 'ouvinte' do sensor para economizar recursos quando a atividade nao estiver em uso.
+Nesse passo ele faz literamente o contrario, como o nome ja diz 'pause' ele remove/pausa o 'ouvinte' do sensor para economizar recursos quando a atividade nao estiver em uso.
 
 5. onSensorChanged:
 --- 
 ![Alt text](image-4.png)
 ---
-Basicamente aqui que criamos a logica da distancia e a troca das imagens com a ativação do sensor, ele verifica a distancia se está dentro do alcance do sensor. Dependendo das condições a uma troca de imagens.
+Basicamente aqui que criamos a lógica da distância e a troca das imagens com a ativação do sensor, ele verifica a distância se está dentro do alcance do sensor. Dependendo das condições a uma troca de imagens.
 
 6. onAccuracyChanged:
 ---
 ![Alt text](image-5.png)
 ---
-Esse metodo é chando quendo a precisão do sensor muda, mas esta vazia, nao achamos nessecidade de criar uma logica para ele nesse exemplo.
+Esse método é chamado quando a precisão do sensor muda, mas esta vazia, nao achamos nessecidade de criar uma logica para ele nesse exemplo.
 
-Esses sao os 6 passos basicos que usamos na criação dessa aplicação do sensor de proximidade.
+Esses são os 6 passos básicos que usamos na criação dessa aplicação do sensor de proximidade.
