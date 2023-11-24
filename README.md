@@ -33,33 +33,31 @@ https://github.com/LenaMenezes/Sensor_Android/assets/128048493/81aa512f-0e78-458
 
 **explicação do código**
 
-o código está fazendo com que o app utilize o sensor da camera do celular, fazendo com que a lampada fique ligada quando não tem nada na frente do sensor do celular, e quanto tem algo na frente a lampada se 
-apagua.
+O código representa uma implementação básica de um aplicativo Android que utiliza o sensor de proximidade para controlar a troca de imagem exibida em um ImageView (representando uma lâmpada). Vamos mostrar código passo a passo:
 
-a baixo terá as imagens do código.
+ 1. Declaração de Variáveis:
+![Alt text](image.png)
 
-**Criação do sensor**
+Antes de tudo temos que declarar as variáveis, que são Sensor de proximidade, SensorManager e a ImageView psrs poder exibir a imagem.
 
-Nesse primeiro código, estamos fazendo a criação do sensor.
+2. onCreate:
+![Alt text](image-1.png)
+Em sequencia chamamos o metodo onCreate quando uma atividade é criada. O layout é definido pelo xml "activity_main" e iniciamos as variáveis que adicionamos no passo anterior, e fazemos a verificação se existe um sensor de proximidade no dispositivo.
 
-![WhatsApp Image 2023-11-23 at 20 13 06](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/5460e876-1bed-43b2-8be6-7ecc7232f8d6)
+3. onResume: 
+![Alt text](image-2.png)
+Quando a atividade está prestes a se tornar visível, o método onResume é chamado. Com o 'this' ele cria um registro de ouvinte para o sensor de proximidade com uma taxa de atualização normal que usamos o 'SENSOR_DELAY_NORMAL'.
 
-**Função**
+4. onPause:
+![Alt text](image-3.png)
+Nesse passo ele faz literamente o contrario, como o nome ja diz 'pause' ele remove o 'ouvinte' do sensor para economizar recursos quando a atividade nao estiver em uso.
 
-Nestá estamos colocando a função do sensor.
+5. onSensorChanged: 
+![Alt text](image-4.png)
+Basicamente aqui que criamos a logica da distancia e a troca das imagens com a ativação do sensor, ele verifica a distancia se está dentro do alcance do sensor. Dependendo das condições a uma troca de imagens.
 
-![WhatsApp Image 2023-11-23 at 20 13 37](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/1e2b6f58-2d45-4fb8-8268-7a224dcd67dc)
+6. onAccuracyChanged:
+![Alt text](image-5.png)
+Esse metodo é chando quendo a precisão do sensor muda, mas esta vazia, nao achamos nessecidade de criar uma logica para ele nesse exemplo.
 
-**Evento do sensor**
-
-O evento no qual o sensor irá ser ativado, tal como a distancia que o objeto precisára estar do sensor para poder funcionar.
-
-![WhatsApp Image 2023-11-23 at 20 14 00](https://github.com/LenaMenezes/Sensor_Android/assets/128048493/564e2036-97c6-4e6c-9885-335bd0258fc5)
-
-
-
-
-
-
-
-
+Esses sao os 6 passos basicos que usamos na criação dessa aplicação do sensor de proximidade.
