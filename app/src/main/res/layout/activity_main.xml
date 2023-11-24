@@ -29,7 +29,20 @@
             android:layout_marginEnd="91dp"
             android:layout_marginBottom="73dp"
             android:text="@string/titulo"
-            tools:ignore="TextContrastCheck,VisualLintOverlap" />
+            tools:ignore="TextContrastCheck,VisualLintOverlap,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/lampON"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="45dp"
+            android:text="@string/instrucao"
+            tools:ignore="TextContrastCheck,VisualLintOverlap,TextSizeCheck" />
 
     </RelativeLayout>
 
